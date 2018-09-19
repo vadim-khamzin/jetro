@@ -1,0 +1,13 @@
+include ../menu/menu
+include ../icon/icon
+
+mixin header()
+	+b.header&attributes(attributes)
+		.container
+			+e.wrapper
+				+b.A.logo(href="#")
+					+e.SPAN.left Jet
+					+e.SPAN.right ro
+				+icon("dropdown", true).dropdown
+				+menu()
+		block

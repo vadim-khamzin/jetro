@@ -1,0 +1,14 @@
+mixin menu()
+	+b.NAV.menu&attributes(attributes)
+		+e.UL.list
+			+e.LI.item
+				+e.A.link_active(href="#") Home
+			+e.LI.item
+				+e.A.link(href="#") About us
+			+e.LI.item
+				+e.A.link(href="#") Blog
+			+e.LI.item
+				+e.A.link(href="#") Portfolio
+			+e.LI.item
+				+e.A.link(href="#") Contact us
+		block

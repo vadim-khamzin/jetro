@@ -1,0 +1,29 @@
+mixin features()
+	+b.features&attributes(attributes)
+		.container
+			+e.wrapper
+				+b.feature
+					+icon("gear", false).icon_gear
+					+e.H3.title
+						| Check out my latest
+						br
+						|  portfolio items
+					+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi maxime incidunt natus qui corporis. Sed impedit libero, cupiditate neque. Est repudiandae excepturi eius impedit, ut porro voluptatum nam minus possimus eos laudantium similique alias cum velit expedita animi voluptatibus labore dolor dicta amet. Praesentium architecto nisi eos!
+					+e.A.button(href="#") More
+				+b.feature
+					+icon("check", false).icon_check
+					+e.H3.title
+						| Offer Top Notch Quality
+						br
+						|  Work & Services
+					+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi maxime incidunt natus qui corporis. Sed impedit libero, cupiditate neque. Est repudiandae excepturi eius impedit, ut porro voluptatum nam minus possimus eos laudantium similique alias cum velit expedita animi voluptatibus labore dolor dicta amet. Praesentium architecto nisi eos!
+					+e.A.button(href="#") More
+				+b.feature
+					+icon("user", false).icon_user
+					+e.H3.title
+						| Follow Me on Twitter,
+						br
+						|  Facebook & Pinterest
+					+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi maxime incidunt natus qui corporis. Sed impedit libero, cupiditate neque. Est repudiandae excepturi eius impedit, ut porro voluptatum nam minus possimus eos laudantium similique alias cum velit expedita animi voluptatibus labore dolor dicta amet. Praesentium architecto nisi eos!
+					+e.A.button(href="#") More
+		block

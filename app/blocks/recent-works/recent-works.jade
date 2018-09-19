@@ -1,0 +1,27 @@
+mixin recent-works()
+	+b.recent-works&attributes(attributes)
+		.container
+			+b.title
+				+e.H2.text Recent Works
+			+e.wrapper
+				+b.A.recent-work(href="#")
+					+e.image(style=`background-image: url('./assets/images/recent-works/01.png');`)
+					+e.text
+						+e.H4.title Character Design
+						+e.SPAN.date June 15, 2012
+				+b.A.recent-work(href="#")
+					+e.image(style=`background-image: url('./assets/images/recent-works/02.png');`)
+					+e.text
+						+e.H4.title Brochure Design
+						+e.SPAN.date June 15, 2012
+				+b.A.recent-work(href="#")
+					+e.image(style=`background-image: url('./assets/images/recent-works/03.png');`)
+					+e.text
+						+e.H4.title Social Media Buttons
+						+e.SPAN.date June 15, 2012
+				+b.A.recent-work(href="#")
+					+e.image(style=`background-image: url('./assets/images/recent-works/04.png');`)
+					+e.text
+						+e.H4.title 10 Amazing Websites
+						+e.SPAN.date June 15, 2012
+		block

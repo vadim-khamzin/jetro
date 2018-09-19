@@ -1,0 +1,22 @@
+mixin slider()
+	+b.slider&attributes(attributes)
+		.container.stripes
+			+e.wrapper
+				+e.A.button_prev(href="#", role="button")
+					+icon("arrow-prev", false).arrow
+				+e.A.button_next(href="#", role="button")
+					+icon("arrow-next", false).arrow
+				+e.slides
+					for i in [1, 2, 3, 4, 5, 6]
+						+b.slide
+							+e.background(
+								style=`background-image: url(./assets/images/slides/0${i}.jpg);`)
+							+e.sign
+								+e.H3.title Slide ##{i}
+								+e.P.text Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea.
+	+b.thumbnails
+		.container
+			+e.wrapper
+				for i in [1, 2, 3, 4, 5, 6]
+					+e.A.item(style=`background-image: url(./assets/images/slides/0${i}-thumb.jpg);`, href="#")
+		block

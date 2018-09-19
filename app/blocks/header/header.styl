@@ -1,0 +1,29 @@
+.header
+	&__wrapper
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		min-height 78px
+
+.logo
+	font-size 36px
+	align-self center
+	min-height 78px
+	line-height 78px
+	justify-self center
+	text-decoration none
+	bebas-font()
+	&__left
+		color rgba(#e8603c, .9)
+	&__right
+		color rgba(#f3af9d, .9)
+
+.dropdown
+	display none
+	align-self center
+	width 26px
+	height 26px
+	cursor pointer
+	fill rgba(#e8603c, .9)
+	+max(580px)
+		display block
