@@ -27,7 +27,7 @@
     "lint": "npm-run-all -p lint:*",
     "predeploy": "npm run production",
     "deploy": "gulp deploy",
-    "clean": "rimraf dist app/styles/sprites/*.styl",
+    "clean": "rimraf dist/* app/styles/sprites/*.styl",
     "prezip": "npm run production",
     "zip": "gulp zip",
     "patch": "gulp patch",
