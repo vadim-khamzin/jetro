@@ -6,6 +6,7 @@ $('.slider__slides').slick({
 	nextArrow: '.slider__button_next',
 });
 
-$('.thumbnails__item').on('click', function() {
+$('.thumbnails__item').on('click', function(e) {
+	e.preventDefault();
 	$('.slider__slides').slick('slickGoTo', $(this).index());
 });
