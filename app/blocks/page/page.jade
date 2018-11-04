@@ -6,9 +6,10 @@ include ../footer/footer
 
 mixin page()
 	+b('body').page&attributes(attributes)
-		+header()
-		+slider()
-		+features()
-		+recent-works()
-		+footer()
+		.container
+			+header()
+			+slider()
+			+features()
+			+recent-works()
+			+footer()
 		block

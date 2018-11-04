@@ -1,12 +1,12 @@
 import $ from 'jquery';
 import 'slick-carousel';
 
-$('.slider__slides').slick({
-	prevArrow: '.slider__button_prev',
-	nextArrow: '.slider__button_next',
+$('.slider-wrapper__slides').slick({
+	prevArrow: '.slider-wrapper__button_prev',
+	nextArrow: '.slider-wrapper__button_next',
 });
 
-$('.thumbnails__item').on('click', function(e) {
+$('.slider-thumbnails__item').on('click', function(e) {
 	e.preventDefault();
-	$('.slider__slides').slick('slickGoTo', $(this).index());
+	$('.slider-wrapper__slides').slick('slickGoTo', $(this).index());
 });

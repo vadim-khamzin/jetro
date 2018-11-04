@@ -1,7 +1,6 @@
-.slider
+.slider-wrapper
 	overflow hidden
-	&__wrapper
-		position relative
+	position relative
 	&__button
 		position absolute
 		cursor pointer
@@ -63,16 +62,15 @@
 
 
 
-.thumbnails
+.slider-thumbnails
 	padding 8px 0
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+	margin-left -10px
+	margin-right -10px
 	+max(500px)
 		display none
-	&__wrapper
-		display flex
-		flex-flow row wrap
-		justify-content space-between
-		margin-left -10px
-		margin-right -10px
 	&__item
 		flex 1 0 0px
 		margin 8px 10px
